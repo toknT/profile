@@ -1,4 +1,4 @@
-import { Box, Paper } from '@material-ui/core'
+import { Paper } from '@material-ui/core'
 
 const Profile = () => {
   return <Paper>todo</Paper>

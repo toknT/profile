@@ -1,11 +1,9 @@
 import {
   AppBar,
   Box,
-  Button,
   Card,
   CardContent,
   CssBaseline,
-  Fab,
   IconButton,
   Typography,
 } from '@material-ui/core'
@@ -83,7 +81,7 @@ function App() {
               <Card className="ji-n-se-i__history ji-n-se-i__history--profile">
                 <Link to="/profile" className="ji-n-se-i__history-link">
                   <CardContent>
-                    <Typography variant="h6">nil-nil-nil</Typography>
+                    <Typography variant="h6">****-**-**</Typography>
                     <Typography variant="h4">profile</Typography>
                   </CardContent>
                 </Link>
