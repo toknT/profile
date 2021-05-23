@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem;
+  position: relative;
 }
 .ji-n-se-i__history {
   order: 1;
@@ -27,4 +28,9 @@
 
 .ji-n-se-i__history-link:visited {
   color: inherit;
+}
+
+.top-bar__github {
+  align-self: flex-end;
+  margin: 0.3rem;
 }

@@ -16,7 +16,7 @@ const HuntPoster = () => {
       <h1>寻猫</h1>
       <div className="container">
         <div className="post__container">
-          <img src={Img2} className="post__item" />
+          <img src={Img2} alt="img2" className="post__item" />
           <div className="post__item">
             <div>
               特征:理花猫,短腿,<strong>尾巴和狗一样短粗</strong>,鼻子白
@@ -28,11 +28,11 @@ const HuntPoster = () => {
             <div>现金答谢: 30-300</div>
             <hr />
             <div>
-              <div>最新更新时间2021-03-07</div>
+              <div>最新更新时间2021-05-23</div>
               <a href="https://aqueous-cove-68364.herokuapp.com/hunt-poster">
                 https://aqueous-cove-68364.herokuapp.com/hunt-poster
               </a>
-              <img src={UrlQr} />
+              <img src={UrlQr} alt="url qr" />
               <div>
                 <small>打开摄像头扫码打开网站(没配代理,打开速度可能慢)</small>
               </div>
@@ -40,8 +40,8 @@ const HuntPoster = () => {
           </div>
         </div>
         <div className="post__container">
-          <img src={Img1} className="post__item" />
-          <img src={Img3} className="post__item" />
+          <img src={Img1} alt="img1" className="post__item" />
+          <img src={Img3} alt="img3" className="post__item" />
         </div>
       </div>
     </Box>

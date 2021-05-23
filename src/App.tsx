@@ -1,17 +1,22 @@
 import {
+  AppBar,
   Box,
+  Button,
   Card,
   CardContent,
   CssBaseline,
+  Fab,
+  IconButton,
   Typography,
 } from '@material-ui/core'
 import './App.css'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import React from 'react'
-import { BrowserRouter, Route, Switch, Redirect, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 import Profile from './histories/Profile'
 import HuntPoster from './histories/HuntPoster'
+import { GitHub } from '@material-ui/icons'
 
 function App() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
@@ -37,6 +42,20 @@ function App() {
             <HuntPoster></HuntPoster>
           </Route>
           <Route exact={true} path="/">
+            <AppBar position="sticky" color="default" className="top-bar">
+              <a
+                href="https://github.com/toknT/profile"
+                className="top-bar__github"
+              >
+                <IconButton
+                  color="default"
+                  aria-label="upload picture"
+                  component="span"
+                >
+                  <GitHub />
+                </IconButton>
+              </a>
+            </AppBar>
             <Box className="ji-n-se-i">
               <Card className="ji-n-se-i__history">
                 <CardContent>
