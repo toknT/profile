@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core'
 import './App.css'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
+import { createTheme, ThemeProvider } from '@material-ui/core/styles'
 import React from 'react'
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 import Profile from './histories/Profile'
@@ -21,7 +21,7 @@ function App() {
 
   const theme = React.useMemo(
     () =>
-      createMuiTheme({
+      createTheme({
         palette: {
           type: prefersDarkMode ? 'dark' : 'light',
         },
